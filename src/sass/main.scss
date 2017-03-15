@@ -1,0 +1,264 @@
+//Base SCSS file
+$base-color: #666666;
+$secundary-color: #333333;
+
+//Base
+@import "base/variables";
+@import "base/normalize";
+@import "base/site";
+@import "base/text";
+@import "base/animations";
+
+//Layout
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/footer";
+
+//Components
+@import "components/buttons";
+@import "components/list";
+@import "components/checkbox";
+
+//Vendor
+@font-face {
+  font-family: 'AquawaxLight';
+  src: url('../fonts/AquawaxLightTrial.eot');
+  src: url('../fonts/AquawaxLightTrial.eot') format('embedded-opentype'),
+  url('../fonts/AquawaxLightTrial.woff2') format('woff2'),
+  url('../fonts/AquawaxLightTrial.woff') format('woff'),
+  url('../fonts/AquawaxLightTrial.ttf') format('truetype'),
+  url('../fonts/AquawaxLightTrial.svg#AquawaxLightTrial') format('svg');
+}
+
+
+*,
+*:after,
+*:before
+{
+  padding: 0;
+  margin: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+html,
+body {
+  background-color: rgba(0,0,0,0);
+  font-size: 16px;
+}
+
+a {
+  display: block;
+  &:hover,
+  &:focus,
+  &:active {
+	text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+.header {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #999999;
+  height: 110px;
+  z-index: 999;
+
+  &.affix,
+  &.affix-top {
+    top: 0;
+    width: 100%;
+  }
+}
+.affix + .container,
+.affix + .container-fluid {
+  padding-top: 110px;
+}
+
+ul.navmenu {
+  float: right;
+  font-family: 'AquawaxLight';
+  font-size: 17px;
+  margin-top: 4.5em;
+  text-transform: uppercase;
+
+  li {
+    display: block;
+    float: left;
+    padding: 0 0.75em 0 0.75em;
+
+    a {
+      color: $base-color;
+    }
+  }
+}
+
+.register_cta {
+  font-family: 'AquawaxLight';
+  font-size: 17px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 1.7em;
+  top: 0.75em;
+  a {
+    background-image: url("../images/header-register-icon.png");
+    background-repeat: no-repeat;
+    color: $base-color;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding-left: 1.2em;
+  }
+}
+
+.bannerTop {
+  position: relative;
+  width: 100%;
+  .backstretch,
+  .backstretch img {
+    width: 100% !important;
+  }
+
+  .formSearch {
+    box-sizing: content-box;
+    height: 110px;
+    left: 50%;
+    padding: 21.66% 0 7.5%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 60%;
+    z-index: 99;
+    .search-fields {
+      display: inline-block;
+      width: 100%;
+      input {
+        display: block;
+        float: left;
+        height: 50px;
+        margin-right: 0.25em;
+        padding: 0.25em 0.5em;
+        width: 77%;
+      }
+    }
+  }
+
+  .bannerText {
+    background-color: rgba(102,102,102,0.60);
+    background-image: url("../images/home-location-pin.png");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    bottom: 4.16%;
+    color: #FFFFFF;
+    font-family: 'AquawaxLight';
+    font-size: 60px;
+    height: 70px;
+    padding-left: 9.16%;
+    padding-right: 9.16%;
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .owl-theme {
+    .owl-item {
+      img {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+.btn {
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  font-family: 'AquawaxLight';
+  font-size: 20px;
+  height: 50px;
+  margin-bottom: 0.25em;
+  margin-right: 0.25em;
+  text-transform: uppercase;
+  width: 150px;
+  &.btn-red {
+    background-color: rgb(228,35,32);
+  }
+  &.btn-gray {
+    background-color: rgb(102,102,102);
+  }
+}
+
+.btn-publish {
+  display: inline-block;
+  padding: 1em 0;
+  width: 230px;
+  img {
+    width: 100%;
+  }
+}
+
+.featured {
+  padding-bottom: 2em;
+  padding-top: 2em;
+  h2 {
+    color: $base-color;
+    font-family: 'AquawaxLight';
+    font-size: 50px;
+  }
+  .items {
+    padding-top: 0.5em;
+    .item-featured {
+      padding-bottom: 2em;
+    }
+  }
+}
+
+.bigTile-home {
+  padding-top: 1em;
+  .banner-tile {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .banner-desc {
+      background-color: rgba(102,102,102,0.60);
+      background-image: url("../images/home-location-pin.png");
+      background-repeat: no-repeat;
+      background-position: 5% 15%;
+      color: #FFFFFF;
+      font-family: 'AquawaxLight';
+      font-size: 50px;
+      padding: 1rem 1rem 1rem 4rem;
+      position: absolute;
+      text-transform: uppercase;
+      width: 35%;
+      line-height: 50px;
+      top: 50%;
+      left: 2%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.footer {
+  background-color: $secundary-color;
+  height: 180px;
+}
+
+
+$break-small: 819px;
+$break-large: 820px;
+
+@media screen and (max-width: $break-small) {
+
+}
+
+@media screen and (min-width: $break-large) {
+
+}

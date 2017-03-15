@@ -1,0 +1,29 @@
+{
+  "name": "WebApp-MI-FalabellaTendencias",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Seed project for web apps. Gulp + BrowserSync + Sass + HTML5",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npm install"
+  },
+  "author": "Diego Becerra C.",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.6.3",
+    "angular-bootstrap-affix": "^0.2.4",
+    "angular-owl-carousel2": "^1.0.6",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.2.0"
+  }
+}
