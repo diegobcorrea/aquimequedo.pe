@@ -1,0 +1,32 @@
+[
+  {
+    "buildId": 1,
+    "image": "site/images/home-featured-01.png",
+    "title": "Edificio #1"
+  },
+  {
+    "buildId": 2,
+    "image": "site/images/home-featured-02.png",
+    "title": "Edificio #2"
+  },
+  {
+    "buildId": 3,
+    "image": "site/images/home-featured-03.png",
+    "title": "Edificio #2"
+  },
+  {
+    "buildId": 4,
+    "image": "site/images/home-featured-04.png",
+    "title": "Edificio #1"
+  },
+  {
+    "buildId": 5,
+    "image": "site/images/home-featured-05.png",
+    "title": "Edificio #2"
+  },
+  {
+    "buildId": 6,
+    "image": "site/images/home-featured-06.png",
+    "title": "Edificio #2"
+  }
+]

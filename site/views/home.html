@@ -1,0 +1,59 @@
+<div ng-controller="HomeController">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <a href="#" class="btn-publish">
+                <img src="site/images/btn-publish-ads.png" />
+            </a>
+        </div>
+        <div class="row">
+            <div class="">
+                <div class="bannerTop">
+                    <div class="formSearch">
+                        <button class="btn btn-red">Comprar</button>
+                        <button class="btn btn-gray">Alquilar</button>
+
+                        <div class="search-fields">
+                            <input type="text">
+                            <button class="btn btn-red">Encuentra</button>
+                        </div>
+                    </div>
+
+                    <div class="bannerText">
+                        Simple, Innovador, Rápido
+                    </div>
+
+                    <ng-owl-carousel class="owl-theme" owl-items="items" owl-properties="properties" owl-ready="ready($api)">
+                        <img class="owl-lazy" style="padding: 5px;" data-ng-repeat="item in items" data-src="{{item}}">
+                    </ng-owl-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container featured">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-uppercase">Nos Encantan / Destacados</h2>
+            </div>
+        </div>
+        <div class="row items">
+            <div ng-repeat="build in builds" class="item-featured col-md-4">
+                <a href="edificio/{{build.buildId}}">
+                    <img ng-src="{{build.image}}" alt="{{build.title}}" >
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bigTile-home">
+        <div class="row">
+            <div class="banner-tile">
+                <img src="site/images/home-fluid-picture.jpg" />
+
+                <div class="banner-desc">
+                    Lima Loft Tendencias
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
